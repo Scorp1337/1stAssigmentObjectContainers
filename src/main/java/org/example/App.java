@@ -69,13 +69,16 @@ public class App {
         System.out.println();
         System.out.println("Each person has stored some hobbies: ");
 
-        System.out.println(ionut.name + " " + hobbies.get(0) + " can be practiced in  " + address.get(0).getCountry()
-                + " and " + hobbies.get(2) + " can be practiced "
-                + address.get(3).getCountry() + ".");
-        System.out.println(madalina.name + " " + hobbies.get(3) + " can be practiced in " +
-                address.get(1).getCountry());
-        System.out.println(victor.name + " " + hobbies.get(1) + " can be practiced in " +
-                address.get(2).getCountry());
+
+        System.out.println(ionut.name + " has two hobbies " + hobbies.get(0) + " and " + hobbies.get(2) +
+                ", they can be practiced in " + address.get(0).getCountry() + " and "
+                + address.get(3).getCountry()+ ".") ;
+
+
+        System.out.println(madalina.name  + "\'s hobby is " + hobbies.get(3) + " and can be practiced in " +
+                address.get(1).getCountry()+ ".");
+        System.out.println(victor.name + "\'s hobby is " + hobbies.get(1) + " and can be practiced in " +
+                address.get(2).getCountry()+ ".");
 
 
         System.out.println();
@@ -96,8 +99,6 @@ public class App {
 
 
         System.out.println();
-
-        System.out.println("Testing to see if ionut and victor are equals based on that value ");
         System.out.println(victor == ionut);
 
     }

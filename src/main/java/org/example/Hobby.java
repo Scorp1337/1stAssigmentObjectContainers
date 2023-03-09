@@ -13,13 +13,13 @@ public class Hobby {
 
     public Hobby(String nameOfHobby, int frequencyPerWeek) {
         this(nameOfHobby, frequencyPerWeek,
-                "adress_not_found");
+                "country_not_found");
     }
 
-    public Hobby(String nameOfHobby, int frequencyPerWeek, String address) {
+    public Hobby(String nameOfHobby, int frequencyPerWeek, String country) {
         this.nameOfHobby = nameOfHobby;
         this.frequencyPerWeek = frequencyPerWeek;
-        this.country = address;
+        this.country = country;
     }
 
     public static void printHobbies(List<Hobby> hobbies) {
@@ -30,9 +30,7 @@ public class Hobby {
 
     @Override
     public String toString() {
-        return "Hobby{" +
-                "name='" + nameOfHobby + '\'' +
-                '}';
+        return  nameOfHobby ;
 
     }
 }
